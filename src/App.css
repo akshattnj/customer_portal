@@ -1,0 +1,79 @@
+.app-header {
+  background-color: #353535;
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+  
+}
+
+.app-container {
+  display: flex;
+ 
+}
+
+.customer-list{
+  flex:1;
+  max-height: calc(150vh);
+  overflow-y: auto;
+  
+}
+.customer-details {
+  flex: 3;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+  background-color:#F9F9F9;
+}
+
+.customer-list h2,
+.customer-details h2 {
+  margin-bottom: 10px;
+}
+
+
+.customer-list ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.customer-list li {
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.customer-list li:hover {
+  background-color: #DBDBDB;
+  
+}
+.customer-list div strong {
+  font-size: 20px; 
+  color:#353535;
+  padding:0;
+
+}
+.customer-list div span{
+  font-size: 18px;
+  color:#353535;
+}
+
+.selected {
+  background-color: #F1F1F1;
+  border-right: 2px solid #353535;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 75%; /* Ensure the grid takes full width */
+  
+  margin: 0 auto;
+}
+
+.photo-grid img {
+  width: 250px; /* Ensure the images take full width of their container */
+  height: 250px; /* Maintain aspect ratio */
+  border-radius: 5px;
+  object-fit: cover; /* Ensure images cover their container without stretching */
+}
